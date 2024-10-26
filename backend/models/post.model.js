@@ -1,9 +1,9 @@
-import mongoose from "mongoose"
+import mongoose from 'mongoose'
 
 const postSchema= new mongoose.Schema({
     user:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"User",
+        type: mongoose.Schema.Types.ObjectId,
+        ref:'User',
         required:true
     },
     text:{
@@ -15,19 +15,19 @@ const postSchema= new mongoose.Schema({
     likes:[
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref:"User",
+            ref:'User',
         }
     ],
     comments:[
         {
             text:{
-                ref:"User",
-            required: true,
+                type:String,
+                required: true,
 
             },
             user:{
                 type:mongoose.Schema.Types.ObjectId,
-                ref:"User",
+                ref:'User',
                 required:true
             }
             
