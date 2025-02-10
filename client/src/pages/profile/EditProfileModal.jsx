@@ -32,14 +32,6 @@ const EditProfileModal = ({ authUser }) => {
     }
   }, [authUser]);
 
-  //       bio: authUser.bio,
-  //       link: authUser.link,
-  //       newPassword: "",
-  //       currentPassword: "",
-  //     });
-  //   }
-  // }, [authUser]);
-
   return (
     <>
       <button
