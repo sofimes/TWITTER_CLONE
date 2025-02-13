@@ -11,13 +11,15 @@ export default {
 
   daisyui: {
     themes: [
-      "light",
+      "dark",
 
       {
         black: {
           ...daisyUIThemes["black"],
-          primary: "rgb(29, 155, 240)",
-          secondary: "rgb(24, 24, 24)",
+          " primary": "rgb(29, 155, 240)",
+          " secondary": "rgb(24, 24, 24)",
+          " base-100": "#121212", // Background color (dark)
+          "base-content": "#ffffff",
         },
       },
     ],
