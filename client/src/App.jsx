@@ -11,10 +11,6 @@ import { useQuery } from "@tanstack/react-query";
 import LoadingSpinner from "./components/common/LoadingSpinner";
 
 function App() {
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", "black");
-    document.documentElement.classList.add("dark");
-  }, []);
   const { data: authUser, isLoading } = useQuery({
     // we use queryKey to give a unique name to our query and refer to it later
     queryKey: ["authUser"],
